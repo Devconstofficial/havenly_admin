@@ -31,17 +31,17 @@ class CustomPagination extends StatelessWidget {
             width: 115,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
-              border: Border.all(color: kBlackColor.withOpacity(0.08)),
+              border: Border.all(color: kPrimaryColor),
             ),
             padding: const EdgeInsets.all(5),
             child: Row(
               children: [
                 CircleAvatar(
                   radius: 16,
-                  backgroundColor: kGreyColor6.withOpacity(0.5),
+                  backgroundColor: kPrimaryColor,
                   child: Transform.rotate(
                     angle: 3.1416,
-                    child: const Icon(Icons.arrow_right_alt, size: 12),
+                    child: const Icon(Icons.arrow_right_alt, size: 12,color: kWhiteColor,),
                   ),
                 ),
                 const SizedBox(width: 5),
@@ -59,12 +59,12 @@ class CustomPagination extends StatelessWidget {
             child: GestureDetector(
               onTap: () => onPageSelected(page),
               child: Container(
-                height: 30,
+                height: 40,
                 width: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(
-                    color: isSelected ? kBlackColor : kBlackColor.withOpacity(0.08),
+                    color: isSelected ? kPrimaryColor : kBlackColor.withOpacity(0.08),
                   ),
                 ),
                 child: Center(
@@ -90,15 +90,15 @@ class CustomPagination extends StatelessWidget {
             width: 115,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
-              border: Border.all(color: kBlackColor.withOpacity(0.08)),
+              border: Border.all(color: kPrimaryColor),
             ),
             padding: const EdgeInsets.all(5),
             child: Row(
               children: [
                 CircleAvatar(
                   radius: 16,
-                  backgroundColor: kGreyColor6.withOpacity(0.5),
-                  child: const Icon(Icons.arrow_right_alt, size: 12),
+                  backgroundColor: kPrimaryColor,
+                  child: const Icon(Icons.arrow_right_alt, size: 12,color: kWhiteColor,),
                 ),
                 const SizedBox(width: 5),
                 Text("Next", style: AppStyles.blackTextStyle().copyWith(fontSize: 14)),

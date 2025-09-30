@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -80,7 +79,7 @@ class LoginScreen extends GetView<AuthController> {
             CustomButton(
               title: "Sign In",
               onTap: () {
-                // Get.toNamed(kDashboardScreenRoute);
+                Get.toNamed(kDashboardScreenRoute);
               },
             ),
           ],
